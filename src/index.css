@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,41 @@
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .blur-backdrop {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .solar-transition {
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  
+  .button-hover {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .button-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+  
+  .button-hover:hover::after {
+    width: 100%;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
 }
