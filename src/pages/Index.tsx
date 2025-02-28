@@ -66,7 +66,7 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Tools Highlight Section - OPTIMIZED */}
+        {/* Tools Highlight Section */}
         <section className="py-24 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -78,63 +78,63 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {/* Shade Map Tool - Updated with more relevant image */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 animate-fade-in h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Shade Map Tool */}
+              <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 animate-fade-in">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
-                    src="/lovable-uploads/cd83c23b-79b1-46ac-885b-8f6fcf9364f4.png" 
-                    alt="3D roof model with shade analysis overlay" 
+                    src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                    alt="Aerial view of landscape" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-2xl font-bold text-white mb-2">Shade Map</h3>
-                    <p className="text-gray-200">
+                    <p className="text-gray-300">
                       Optimize panel placement with detailed shade analysis
                     </p>
                   </div>
                 </div>
-                <div className="p-6 flex flex-col h-[calc(100%-56.25%)]">
-                  <p className="text-gray-600 dark:text-gray-300 mb-auto">
+                <div className="p-6">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
                     Our advanced shade mapping tool helps you identify the perfect spots for solar panel installation by analyzing sun exposure throughout the day and seasons.
                   </p>
                   <Link 
                     to="/tools/shade-map" 
-                    className="inline-flex items-center text-solar-dark dark:text-solar-accent font-medium hover:underline mt-6 group"
+                    className="inline-flex items-center text-solar-dark dark:text-solar-accent font-medium hover:underline"
                   >
                     <span>Explore Shade Map</span>
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </div>
               </div>
               
-              {/* Solar Simulator Tool - Updated with more relevant image */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 animate-fade-in delay-100 h-full">
+              {/* Solar Simulator Tool */}
+              <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 animate-fade-in delay-100">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1581084349663-5199d32c0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Solar panel installation with data visualization overlay" 
+                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                    alt="Solar panel with code overlay" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-2xl font-bold text-white mb-2">Solar Simulator</h3>
-                    <p className="text-gray-200">
+                    <p className="text-gray-300">
                       Design and simulate your ideal solar energy system
                     </p>
                   </div>
                 </div>
-                <div className="p-6 flex flex-col h-[calc(100%-56.25%)]">
-                  <p className="text-gray-600 dark:text-gray-300 mb-auto">
+                <div className="p-6">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
                     Calculate potential energy generation, cost savings, and ROI with our comprehensive solar system design and simulation tool.
                   </p>
                   <Link 
                     to="/tools/solar-simulator" 
-                    className="inline-flex items-center text-solar-dark dark:text-solar-accent font-medium hover:underline mt-6 group"
+                    className="inline-flex items-center text-solar-dark dark:text-solar-accent font-medium hover:underline"
                   >
                     <span>Try Solar Simulator</span>
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Index = () => {
             <div className="text-center mt-12">
               <Link 
                 to="/tools" 
-                className="inline-block px-8 py-4 bg-solar-dark text-white rounded-md font-medium button-hover solar-transition hover:bg-opacity-90 transition-all animate-fade-in"
+                className="inline-block px-8 py-3 bg-solar-dark text-white rounded-md font-medium button-hover solar-transition animate-fade-in"
               >
                 View All Tools
               </Link>
