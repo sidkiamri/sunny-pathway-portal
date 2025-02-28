@@ -23,8 +23,8 @@ const Index = () => {
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl group hover:shadow-2xl transition-all duration-300 animate-fade-in transform hover:-translate-y-1">
               <div className="aspect-video relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
-                  alt="Aerial view of landscape" 
+                  src="https://images.unsplash.com/photo-1611365892117-00d770df2939?auto=format&fit=crop&q=80&w=1200&ixlib=rb-4.0.3"
+                  alt="Detailed 3D solar roof map with shadow analysis" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -53,8 +53,8 @@ const Index = () => {
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl group hover:shadow-2xl transition-all duration-300 animate-fade-in delay-100 transform hover:-translate-y-1">
               <div className="aspect-video relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-                  alt="Solar panel with code overlay" 
+                  src="https://images.unsplash.com/photo-1628949597525-324b2d5b0bcf?auto=format&fit=crop&q=80&w=1200&ixlib=rb-4.0.3"
+                  alt="Solar panel installation with digital overlay" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
