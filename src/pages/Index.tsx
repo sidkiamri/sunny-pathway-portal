@@ -21,11 +21,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Shade Map Tool */}
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl group hover:shadow-2xl transition-all duration-300 animate-fade-in transform hover:-translate-y-1">
-              <div className="aspect-video relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden bg-gray-200 dark:bg-gray-700">
                 <img 
-                  src="https://images.unsplash.com/photo-1611365892117-00d770df2939?auto=format&fit=crop&q=80&w=1200&ixlib=rb-4.0.3"
+                  src="https://images.unsplash.com/photo-1548603362-14a5fb183996?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
                   alt="Detailed 3D solar roof map with shadow analysis" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=1200";
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8">
@@ -51,11 +55,15 @@ const Index = () => {
             
             {/* Solar Simulator Tool */}
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl group hover:shadow-2xl transition-all duration-300 animate-fade-in delay-100 transform hover:-translate-y-1">
-              <div className="aspect-video relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden bg-gray-200 dark:bg-gray-700">
                 <img 
-                  src="https://images.unsplash.com/photo-1628949597525-324b2d5b0bcf?auto=format&fit=crop&q=80&w=1200&ixlib=rb-4.0.3"
+                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
                   alt="Solar panel installation with digital overlay" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1200";
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8">
